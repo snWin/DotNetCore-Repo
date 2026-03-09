@@ -1,0 +1,481 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DotNetCore-Repo\\NZWalk\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Security.Cryptography.ProtectedData.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\System.Security.Cryptography.ProtectedData.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Memory.Data.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\System.Memory.Data.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.IdentityModel.Tokens.Jwt.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\System.IdentityModel.Tokens.Jwt.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Composition.TypedParts.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\System.Composition.TypedParts.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.EntityFrameworkCore.Design.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.EntityFrameworkCore.Design.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Data.SqlClient.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Data.SqlClient.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Build.Framework.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Build.Framework.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.AspNetCore.OpenApi.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.AspNetCore.OpenApi.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Humanizer.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Humanizer.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Azure.Identity.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Azure.Identity.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Azure.Core.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\Azure.Core.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\pl\\Microsoft.CodeAnalysis.Workspaces.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\pl\\Microsoft.CodeAnalysis.Workspaces.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ja\\Microsoft.CodeAnalysis.Workspaces.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\ja\\Microsoft.CodeAnalysis.Workspaces.resources.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\BuildHost-net472\\Microsoft.IO.Redist.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NZWalk.API\\bin\\Debug\\net10.0\\BuildHost-net472\\Microsoft.IO.Redist.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\migrations\\nzwalksdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\migrations\\nzwalksdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\migrations\\20260308023318_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\migrations\\20260308023318_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "System.Security.Cryptography.ProtectedData.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Security.Cryptography.ProtectedData.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\System.Security.Cryptography.ProtectedData.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Security.Cryptography.ProtectedData.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\System.Security.Cryptography.ProtectedData.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:48:23.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "System.Memory.Data.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Memory.Data.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\System.Memory.Data.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Memory.Data.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\System.Memory.Data.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:48:22.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "System.IdentityModel.Tokens.Jwt.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.IdentityModel.Tokens.Jwt.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\System.IdentityModel.Tokens.Jwt.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.IdentityModel.Tokens.Jwt.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\System.IdentityModel.Tokens.Jwt.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:48:21.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "System.Composition.TypedParts.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Composition.TypedParts.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\System.Composition.TypedParts.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\System.Composition.TypedParts.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\System.Composition.TypedParts.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:48:19.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:48.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.IdentityModel.Protocols.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.IdentityModel.Protocols.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:47.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Microsoft.EntityFrameworkCore.Design.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.EntityFrameworkCore.Design.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.EntityFrameworkCore.Design.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.EntityFrameworkCore.Design.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.EntityFrameworkCore.Design.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:28.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Microsoft.Data.SqlClient.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Data.SqlClient.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Data.SqlClient.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Data.SqlClient.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Data.SqlClient.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:17.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:16.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Microsoft.CodeAnalysis.Workspaces.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.Workspaces.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:15.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:07.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Microsoft.CodeAnalysis.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.CodeAnalysis.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:05.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Microsoft.Build.Framework.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Build.Framework.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Build.Framework.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Build.Framework.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.Build.Framework.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:47:02.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Microsoft.AspNetCore.OpenApi.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.AspNetCore.OpenApi.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.AspNetCore.OpenApi.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.AspNetCore.OpenApi.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Microsoft.AspNetCore.OpenApi.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:59.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Humanizer.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Humanizer.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Humanizer.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Humanizer.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Humanizer.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:58.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Azure.Identity.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Azure.Identity.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Azure.Identity.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Azure.Identity.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Azure.Identity.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:57.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Azure.Core.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Azure.Core.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\Azure.Core.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\Azure.Core.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\Azure.Core.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:56.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:44.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Microsoft.CodeAnalysis.resources.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.resources.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.resources.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.resources.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\zh-Hans\\Microsoft.CodeAnalysis.resources.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:43.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\pl\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\pl\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\pl\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\pl\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:18.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:09.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\ko\\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:08.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ja\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\ja\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\ja\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\ja\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:46:01.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Microsoft.IO.Redist.dll",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\BuildHost-net472\\Microsoft.IO.Redist.dll",
+              "RelativeDocumentMoniker": "NZWalk.API\\bin\\Debug\\net10.0\\BuildHost-net472\\Microsoft.IO.Redist.dll",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\bin\\Debug\\net10.0\\BuildHost-net472\\Microsoft.IO.Redist.dll",
+              "RelativeToolTip": "NZWalk.API\\bin\\Debug\\net10.0\\BuildHost-net472\\Microsoft.IO.Redist.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-03-09T03:45:13.596Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Controllers\\RegionsController.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "NZWalk.API\\Controllers\\RegionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T03:15:48.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "NZWalk.API\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T03:13:01.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NZWalksDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Migrations\\NZWalksDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Migrations\\NZWalksDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Migrations\\NZWalksDbContextModelSnapshot.cs",
+              "RelativeToolTip": "NZWalk.API\\Migrations\\NZWalksDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T02:41:41.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "NZWalk.API\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T03:13:06.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20260308023318_Initial Migration.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Migrations\\20260308023318_Initial Migration.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Migrations\\20260308023318_Initial Migration.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Migrations\\20260308023318_Initial Migration.cs",
+              "RelativeToolTip": "NZWalk.API\\Migrations\\20260308023318_Initial Migration.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T02:33:18.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Program.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Program.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Program.cs",
+              "RelativeToolTip": "NZWalk.API\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T06:18:07.48Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
