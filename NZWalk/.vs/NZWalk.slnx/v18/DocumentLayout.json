@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DotNetCore-Repo\\NZWalk\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Controllers\\RegionsController.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "NZWalk.API\\Controllers\\RegionsController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAYwH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T08:59:31.433Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
