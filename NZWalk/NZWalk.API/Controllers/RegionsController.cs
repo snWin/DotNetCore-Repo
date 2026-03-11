@@ -1,9 +1,11 @@
 ﻿using System.Security.AccessControl;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NZWalk.API.Data;
 using NZWalk.API.Models.Domain;
 using NZWalk.API.Models.DTO;
+using NZWalk.API.Repositories;
 
 namespace NZWalk.API.Controllers
 {
@@ -12,20 +14,28 @@ namespace NZWalk.API.Controllers
 	[ApiController] //This will tell this application that this Controller is API use and automatically validate the model state.
 	public class RegionsController : ControllerBase
 	{
-		private readonly NZWalksDbContext dbContext;
+		// First, We use dbContext to inject DataBase
+		//private readonly NZWalksDbContext dbContext;
+
+		// Second, we use Repository to inject DataBase, which is best practice, because it will separate the data access logic from the controller and it will make the code more maintainable and testable.
+		private readonly IRegionRepository regionRepository;
 
 		// As we injected DbContext by using DI, now we can use DbContext inside the Controller through Constructor Injection.
 		// type ctor, press double Tab to create constructor faster.
 		// select dbContext. press Ctrl + . to create and assign field dbContext
-		public RegionsController(NZWalksDbContext dbContext)
+		public RegionsController(IRegionRepository regionRepository)
 		{
-			this.dbContext = dbContext;
+			// First we use dbContext to inject DataBase, which is not good practice, because it will couple the controller with the data access logic and it will make the code less maintainable and testable.
+			//this.dbContext = dbContext;
+
+			//Second, we use Repository to inject DataBase, which is best practice, because it will separate the data access logic from the controller and it will make the code more maintainable and testable.
+			this.regionRepository = regionRepository;
 		}
 
 		// Get All Regions
 		// GET : https://localhost:portnumber/api/Regions -- this is REST FUll URL to get all the regions.
 		[HttpGet]
-		public IActionResult GetAll()
+		public async Task<IActionResult> GetAll()
 		{
 			//Access to Regions table
 			//var regions = dbContext.Regions.ToList();
@@ -34,9 +44,17 @@ namespace NZWalk.API.Controllers
 			//We will create a separate class for API, which is called DTO (Data Transfer Object) and we will use that DTO to send/expose data back to client.
 			//return Ok(regions); //return 200
 
-			//The best practice - expose DTO instead of Domain Model. We have Separation Of Concern (SOC) as well
+			//First - The best practice - expose DTO instead of Domain Model. We have Separation Of Concern (SOC) as well
 			//Get data from Database - Domain Model
-			var regionsDomains = dbContext.Regions.ToList();
+			//var regionsDomains = dbContext.Regions.ToList();  
+
+			//Second use Repository instead of directly call on dbContext.
+			var regionsDomains = await regionRepository.GetAllAsync();
+
+			if (regionsDomains == null)
+			{
+				return NotFound();//404
+			}
 
 			//Map Domain Models to DTOs
 			var regionsDto = new List<RegionDto>();
@@ -55,12 +73,15 @@ namespace NZWalk.API.Controllers
 
 		}
 
+		// GET action to retrieve the created item
+		//[HttpGet("{id}", Name = nameof(GetByIdAsync))] // Named route for CreatedAtAction
+
 		// Get single Region (Get Region by ID)
 		// GET : https://localhost:portnumber/api/Regions/{id}
 		[HttpGet]
 		// adding DataType after column name, it is Type safe. -- {id:Guid}
 		[Route("{id:Guid}")]
-		public IActionResult GetById([FromRoute] Guid id)
+		public async Task<IActionResult> GetById([FromRoute] Guid id)
 		{
 			//Access data from Domain Model and send back to client directly, which is not good practice.
 			// var region = dbContext.Regions.Find(id);
@@ -73,7 +94,19 @@ namespace NZWalk.API.Controllers
 			//return Ok(region);
 
 			// Get Region Domain Model From Database
-			var regionDomain = dbContext.Regions.FirstOrDefault(x => x.Id == id); // x = such that
+			//This is standard (synchronous) version.
+			//var regionDomain = dbContext.Regions.FirstOrDefault(x => x.Id == id); // x = such that
+
+			// use Asynchronous but call directly on dbContext.
+			// First - use directly on dbContext, now we will use Repository instead of directly call on dbContext.
+			//var regionDomain = await dbContext.Regions.FirstOrDefaultAsync(x => x.Id == id);
+			// will call Repository instead of directly call on dbContext
+			//var regionDomain = await regionRe
+
+			// Second - use Repository instead of directly call on dbContext.
+			var regionDomain = await regionRepository.GetByIdAsync(id);
+
+
 			if (regionDomain == null)
 			{
 				return NotFound();//404
@@ -95,9 +128,10 @@ namespace NZWalk.API.Controllers
 		//	POST to Create New Region
 		// POST: https://localhost:portnumber/api/regions
 		[HttpPost]
-		public IActionResult Create([FromBody] AddRegionRequestDto addRegionRequestDto)
+		public async Task<IActionResult> Create([FromBody] AddRegionRequestDto addRegionRequestDto)
 		{
 			//Map or Convert DTO to Domain Model
+			// ??? After CreatedAtAction, the result will return back to the caller, regionDomainModel
 			var regionDomainModel = new Region
 			{
 				Code = addRegionRequestDto.Code,
@@ -106,8 +140,17 @@ namespace NZWalk.API.Controllers
 			};
 
 			// Use/Save Domain Model to create Region
-			dbContext.Regions.Add(regionDomainModel);
-			dbContext.SaveChanges();
+			//This is Standard (synchronous)
+			//dbContext.Regions.Add(regionDomainModel);
+			//dbContext.SaveChanges();
+
+			// This is Asynchronous, which is best practice, because it will not block the thread and it will improve the performance of the application.
+			// First - This is using dbContext directly, but we will use Repository instead of directly call on dbContext.
+			//await dbContext.Regions.AddAsync(regionDomainModel);
+			//await dbContext.SaveChangesAsync();
+
+			// Second - using Repository instead of directly call on dbContext.
+			regionDomainModel=await regionRepository.CreateAsync(regionDomainModel);
 
 			//should not return back Domain Model, we should return DTO back to client, which is best practice.
 			//return CreatedAtAction(nameof(GetById), new { id = regionDomainModel.Id }, regionDomainModel);
@@ -131,11 +174,28 @@ namespace NZWalk.API.Controllers
 		// [FromBody] means we are accepting the data from request body, which is in JSON format, and we are converting that JSON data to UpdateRegionRequestDto object.
 		[HttpPut]
 		[Route("{id:guid}")]		
-		public IActionResult Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto) 
+		public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto) 
 		{
 			// Check if region exists
-			var regionDomainModel = dbContext.Regions.FirstOrDefault(x => x.Id == id);
+			//This is Standard (synchronous)
+			//var regionDomainModel = dbContext.Regions.FirstOrDefault(x => x.Id == id);
 			//EF Core is tracked by dbContext on the above line, so we can just update the Domain Model and call SaveChanges to save the changes to the database.
+
+			//Asyncrhonous version using await
+			// First - use directly on dbContext. need to chagen to call Repository instead of directly call on dbContext.
+			//var regionDomainModel = await dbContext.Regions.FirstOrDefaultAsync(x => x.Id == id);
+
+			//Second - use Repository instead of directly call on dbContext.
+			//Map DTO to Domain Model
+			var regionDomainModel = new Region
+			{
+				Code = updateRegionRequestDto.Code,
+				Name = updateRegionRequestDto.Name,
+				RegionImageUrl = updateRegionRequestDto.RegionImageUrl
+			};
+
+			regionDomainModel = await regionRepository.UpdateAsync(id, regionDomainModel);
+			 
 
 			if (regionDomainModel == null)
 			{
@@ -144,16 +204,19 @@ namespace NZWalk.API.Controllers
 
 			// Map DTO to Domain Model - we accept DTO from swagger, so need to convert from DTO to Domain Model
 			//Tracking on these below three properties, and changes have been done on these properties, so no need to call "Update" method, just call SaveChanges to save the changes to the database.
-			regionDomainModel.Code = updateRegionRequestDto.Code;
-			regionDomainModel.Name = updateRegionRequestDto.Name;
-			regionDomainModel.RegionImageUrl = updateRegionRequestDto.RegionImageUrl;
+			//regionDomainModel.Code = updateRegionRequestDto.Code;
+			//regionDomainModel.Name = updateRegionRequestDto.Name;
+			//regionDomainModel.RegionImageUrl = updateRegionRequestDto.RegionImageUrl;
 
 
 			// use "SaveChanges", no need "Update" method. the changes in the Domain Model, so we just need to call SaveChanges to save the changes to the database.
 			// because Entity Framework Core (EF Core) entities are tracked by the DbContext instance by default
 			// This mechanism, known as "Change Tracking"
-			dbContext.SaveChanges();
+			//dbContext.SaveChanges(); // Standard (synchronous)
+			// First - use directly on dbContext, but we will use Repository instead of directly call on dbContext.
+			//await dbContext.SaveChangesAsync(); 
 
+			
 			// Convert Domain Model back to DTO
 			var regionDto = new RegionDto
 			{
@@ -171,18 +234,28 @@ namespace NZWalk.API.Controllers
 		// DELETE: https://localhost:portnumber/api/regions/{id}
 		[HttpDelete]
 		[Route("{id:Guid}")] // make Type safe by adding DataType after column name, which is Guid in this case.
-		public IActionResult Delete([FromRoute] Guid id)
+		public async Task<IActionResult> Delete([FromRoute] Guid id)
 		{
-			var regionDomainModel=	dbContext.Regions.FirstOrDefault(x=>x.Id == id);
+			//starndar (synchronous)
+			//var regionDomainModel=	dbContext.Regions.FirstOrDefault(x=>x.Id == id);
+			// First - use directly on dbContext, but we will use Repository instead of directly call on dbContext.
+			//var regionDomainModel = await dbContext.Regions.FirstOrDefaultAsync(x => x.Id == id);
+
+			//Second - use Repository instead of directly call on dbContext.
+			var regionDomainModel = await regionRepository.DeleteAsync(id);
 
 			if (regionDomainModel == null)
 			{
 				return NotFound();
 			}
 
-			dbContext.Regions.Remove(regionDomainModel);
-			dbContext.SaveChanges();
+			//There is no Async for Remove() to delete data.
+			// First - use directly on dbContext, but we will use Repository instead of directly call on dbContext.
+			//dbContext.Regions.Remove(regionDomainModel);
+			//dbContext.SaveChanges(); // starndard (synchronous)
+			//await dbContext.SaveChangesAsync(); // using Asynchronous, which is best practice, because it will not block the thread and it will improve the performance of the application.
 
+			// Second - use Repository instead of directly call on dbContext.
 			// return deleted Region back 
 			// map Domain Model to DTO
 			var regionDto = new RegionDto

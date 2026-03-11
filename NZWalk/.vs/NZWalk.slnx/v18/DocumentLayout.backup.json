@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\DotNetCore-Repo\\NZWalk\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|d:\\dotnetcore-repo\\nzwalk\\nzwalk.api\\repositories\\iregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0396C9-2E3D-B946-9096-6DD045D04167}|NZWalk.API\\NZWalk.API.csproj|solutionrelative:nzwalk.api\\repositories\\iregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRegionRepository.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Repositories\\IRegionRepository.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Repositories\\IRegionRepository.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Repositories\\IRegionRepository.cs",
+              "RelativeToolTip": "NZWalk.API\\Repositories\\IRegionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:07:42.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SQLRegionRepository.cs",
+              "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Repositories\\SQLRegionRepository.cs",
+              "RelativeDocumentMoniker": "NZWalk.API\\Repositories\\SQLRegionRepository.cs",
+              "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Repositories\\SQLRegionRepository.cs",
+              "RelativeToolTip": "NZWalk.API\\Repositories\\SQLRegionRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAWwC4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T09:34:35.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "RegionsController.cs",
               "DocumentMoniker": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\RegionsController.cs",
               "RelativeDocumentMoniker": "NZWalk.API\\Controllers\\RegionsController.cs",
               "ToolTip": "D:\\DotNetCore-Repo\\NZWalk\\NZWalk.API\\Controllers\\RegionsController.cs",
               "RelativeToolTip": "NZWalk.API\\Controllers\\RegionsController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAADwv0AAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAADwv3AAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T08:59:31.433Z",
+              "WhenOpened": "2026-03-10T05:09:49.749Z",
               "EditorCaption": ""
             }
           ]
