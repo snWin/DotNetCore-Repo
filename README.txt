@@ -65,3 +65,37 @@ contract = legally binding agreement between two or more parties
 Asynchronous Programmings 
 Repository Pattern
 Automapper
+
+** Asynchronous Programmings **
+- the recommended approach for I/O-bound database operations
+
+EF Core Async Methods:
+1. ToListAsync()
+2. FirstOrDefaultAsync()
+3. SingleOrDefaultAsync()
+4. CountAsync()
+5. SaveChangesAsync()
+-- There is no Async for Remove() to delete data.
+
+Standard (synchronous) methods block the execution thread while waiting for the database operation (query, save, etc) to complete. can lead the performance issue under heavy load.
+
+Async methods (like ToListAsync()) free up the thread to proceed other tasks while the application waits for the database to respond. This increase scalability and responsiveness, especially in web API that handle many concurrent requests.
+
+
+** Repository Pattern **
+
+Controller <--> Repository -- (DbContext) <--> Database
+
+- Design pattern to separate the data access layer from the rest of the application 
+- Provide interface without exposing DataBase implementation
+- Helps create abstraction
+
+-Decoupling
+(decoupling the data access layer from the rest of the application)
+-Consistency 
+(you can switch the logic and the data stores behind the implementation repository. the controller has no knowledge about the data stores)
+-Performance 
+(every connection to the database goes through the repository we can also improve the performance of the application by using caching, batching or other optimization techniques)
+-Multiple data sources 
+(switching - between different data sources - from MSSQL to MongoDB- without affecting the application logic)
+
