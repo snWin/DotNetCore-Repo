@@ -38,8 +38,7 @@
               "RelativeToolTip": "NZWalk.API\\Models\\Domain\\Walk.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T09:20:33.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T09:20:33.006Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "NZWalk.API\\Controllers\\WalksController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T09:15:16.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T09:15:16.204Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "NZWalk.API\\Repositories\\SQLRegionRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAYwBoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T13:25:41.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T13:25:41.354Z"
             }
           ]
         }
