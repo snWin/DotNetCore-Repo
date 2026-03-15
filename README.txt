@@ -99,6 +99,20 @@ Controller <--> Repository -- (DbContext) <--> Database
 -Multiple data sources 
 (switching - between different data sources - from MSSQL to MongoDB- without affecting the application logic)
 
+
+**Automapper**
+
+Install AutoMapper - A conversion-based object-object mapper
+
+using AutoMapper;
+
+CreateMap<Source,Desitation>.ReverseMap();
+
+Register in program.cs
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+
+
+
 6. Add Swagger
 
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-8.0&tabs=visual-studio
@@ -110,5 +124,6 @@ https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swa
 		Install-Package Swashbuckle.AspNetCore -Version 10.1.5
 (2) Register in Program.cs
 (3) Browse https://localhost:portnumber/swagger/index.html
+
 
 

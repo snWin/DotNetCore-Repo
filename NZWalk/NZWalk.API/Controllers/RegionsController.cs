@@ -1,4 +1,6 @@
 ﻿using System.Security.AccessControl;
+using AutoMapper;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,17 +21,19 @@ namespace NZWalk.API.Controllers
 
 		// Second, we use Repository to inject DataBase, which is best practice, because it will separate the data access logic from the controller and it will make the code more maintainable and testable.
 		private readonly IRegionRepository regionRepository;
+		private readonly IMapper mapper;
 
 		// As we injected DbContext by using DI, now we can use DbContext inside the Controller through Constructor Injection.
 		// type ctor, press double Tab to create constructor faster.
 		// select dbContext. press Ctrl + . to create and assign field dbContext
-		public RegionsController(IRegionRepository regionRepository)
+		public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository,IMapper mapper)
 		{
 			// First we use dbContext to inject DataBase, which is not good practice, because it will couple the controller with the data access logic and it will make the code less maintainable and testable.
-			//this.dbContext = dbContext;
+			//this.dbContext = dbContext; // is not used. we use Repository instead.
 
 			//Second, we use Repository to inject DataBase, which is best practice, because it will separate the data access logic from the controller and it will make the code more maintainable and testable.
 			this.regionRepository = regionRepository;
+			this.mapper = mapper;
 		}
 
 		// Get All Regions
@@ -57,7 +61,10 @@ namespace NZWalk.API.Controllers
 			}
 
 			//Map Domain Models to DTOs
-			var regionsDto = new List<RegionDto>();
+			//To use the AutoMapper, register an AutoMapper profile in program.cs file - telling the application to use this Profile when the application starts.
+			// will use Mapper instead of the Map Domain Models to DTOs
+			/*
+			  var regionsDto = new List<RegionDto>();
 			foreach (var regionsDomain in regionsDomains)
 			{
 				regionsDto.Add(new RegionDto()
@@ -68,9 +75,18 @@ namespace NZWalk.API.Controllers
 					RegionImageUrl = regionsDomain.RegionImageUrl
 				});
 			}
-			//Return DTOs to client
-			return Ok(regionsDto);
 
+			return Ok(regionsDto);
+			*/
+
+			//Map Domain Models to DTOs
+			//mapper.Map<Destination>(Source) - to map/convert from source to destination.
+			//var regionsDto= mapper.Map<List<RegionDto>>(regionsDomains); 
+			//return Ok(regionsDto);//Return DTOs to client
+
+			// OR - the above two lines of code can be written in one line as below.
+
+			return Ok(mapper.Map<List<RegionDto>>(regionsDomains)); //Map Domain Models to DTO and return DTOs to client by one line.
 		}
 
 		// GET action to retrieve the created item
@@ -113,6 +129,7 @@ namespace NZWalk.API.Controllers
 			}
 
 			// Map/Convert Region Domain Model to Region DTO
+			/* Use AutoMapper instead of the below code.
 			var regionDto = new RegionDto
 			{
 				Id = regionDomain.Id,
@@ -123,6 +140,10 @@ namespace NZWalk.API.Controllers
 
 			// Return DTO back to client
 			return Ok(regionDto);
+			*/
+
+			//AutoMapper
+			return Ok(mapper.Map<RegionDto>(regionDomain)); // Map/Convert Region Domain Model to Region DTO and Return DTO back to client by one line.
 		}
 
 		//	POST to Create New Region
@@ -131,13 +152,19 @@ namespace NZWalk.API.Controllers
 		public async Task<IActionResult> Create([FromBody] AddRegionRequestDto addRegionRequestDto)
 		{
 			//Map or Convert DTO to Domain Model
-			// ??? After CreatedAtAction, the result will return back to the caller, regionDomainModel
+			// ??? Question:  After CreatedAtAction, the result will return back to the caller, regionDomainModel
+			// -- Answer : it will return "regionDto" beause GetById returns "regionDto"
+			/* comment out the below code, because will use Mapper.*/
 			var regionDomainModel = new Region
 			{
 				Code = addRegionRequestDto.Code,
 				Name = addRegionRequestDto.Name,
 				RegionImageUrl = addRegionRequestDto.RegionImageUrl
 			};
+			
+			//Map/Convert DTO to Domain Model
+			//var regionDomainModel = mapper.Map<Region>(addRegionRequestDto);
+
 
 			// Use/Save Domain Model to create Region
 			//This is Standard (synchronous)
@@ -150,12 +177,13 @@ namespace NZWalk.API.Controllers
 			//await dbContext.SaveChangesAsync();
 
 			// Second - using Repository instead of directly call on dbContext.
-			regionDomainModel=await regionRepository.CreateAsync(regionDomainModel);
+			regionDomainModel = await regionRepository.CreateAsync(regionDomainModel);
 
 			//should not return back Domain Model, we should return DTO back to client, which is best practice.
-			//return CreatedAtAction(nameof(GetById), new { id = regionDomainModel.Id }, regionDomainModel);
+			return CreatedAtAction(nameof(GetById), new { id = regionDomainModel.Id }, regionDomainModel);
 
 			// Map Domain Model back to DTO
+			/*comment out the below code, because will use Mapper.
 			var regionDto = new RegionDto
 			{
 				Id = regionDomainModel.Id,
@@ -163,10 +191,13 @@ namespace NZWalk.API.Controllers
 				Name = regionDomainModel.Name,
 				RegionImageUrl = regionDomainModel.RegionImageUrl
 			};
+			*/
+			//var regionDto =mapper.Map<RegionDto>(regionDomainModel);
+
 
 			//return DTO back to client, which is best practice.
 			// need to specify the Action name, which is GetById along with the route parameter, which is id, and the response body, regionDto.
-			return CreatedAtAction(nameof(GetById), new { id = regionDto.Id }, regionDto);
+			//return CreatedAtAction(nameof(GetById), new { id = regionDto.Id }, regionDto);
 		}
 
 		// Update region

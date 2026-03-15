@@ -1,5 +1,9 @@
+using System.Reflection;
+using System.Reflection.Metadata;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using NZWalk.API.Data;
+
 using NZWalk.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,6 +37,17 @@ builder.Services.AddDbContext<NZWalksDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnectionString")));
 
 builder.Services.AddScoped<IRegionRepository,SQLRegionRepository>();
+
+//AutoMapper is injected into the application by registering it in here, program.cs file.
+//In Program.cs, register AutoMapper to scan your assembly for mapping profiles:
+// Use the params Type[] overload. Avoid using a named parameter that may not exist in the installed package.
+//builder.Services.AddAutoMapper(typeof(Program));
+
+// after installed Downgrade versino, 12.0.1, it is solved.
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+//Registering AutoMapper to scan your assembly means configuring the library to automatically find all classes that inherit from Profile within your project, eliminating the need to manually register each mapping configuration. 
+//If the application runs, it will scan all the mapping 
 
 var app = builder.Build();
 
