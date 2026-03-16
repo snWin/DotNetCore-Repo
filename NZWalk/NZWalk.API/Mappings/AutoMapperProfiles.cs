@@ -16,6 +16,8 @@ namespace NZWalk.API.Mappings
 
 			//For Post - Create([FromBody] AddRegionRequestDto addRegionRequestDto). Actually, ReverseMap is not necessary here as it is save, one direction.
 			CreateMap<AddRegionRequestDto, Region>().ReverseMap();
+			CreateMap<AddWalkRequestDto,Walk>().ReverseMap();
+			CreateMap<Walk,WalkDto>().ReverseMap();
 		}
 	}
 }

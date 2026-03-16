@@ -37,6 +37,7 @@ builder.Services.AddDbContext<NZWalksDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnectionString")));
 
 builder.Services.AddScoped<IRegionRepository,SQLRegionRepository>();
+builder.Services.AddScoped<IWalkRepository, SQLWalkRepository>();
 
 //AutoMapper is injected into the application by registering it in here, program.cs file.
 //In Program.cs, register AutoMapper to scan your assembly for mapping profiles:

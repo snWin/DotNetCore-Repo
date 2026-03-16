@@ -35,11 +35,28 @@ namespace NZWalk.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Difficulties");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("6e8a8d57-46d7-4941-9ffd-e97ae65ba0c5"),
+                            Name = "Easy"
+                        },
+                        new
+                        {
+                            Id = new Guid("2b779f69-6f1b-4dd0-9736-192b98943f01"),
+                            Name = "Medium"
+                        },
+                        new
+                        {
+                            Id = new Guid("e0543ddb-eb25-45ca-ac0a-38890b54ed34"),
+                            Name = "Hard"
+                        });
                 });
 
             modelBuilder.Entity("NZWalk.API.Models.Domain.Region", b =>
                 {
-                    b.Property<Guid>("id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -54,9 +71,24 @@ namespace NZWalk.API.Migrations
                     b.Property<string>("RegionImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Regions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("77882740-f5a9-492c-b7b5-da94f52ecbfe"),
+                            Code = "AKL",
+                            Name = "Ackland",
+                            RegionImageUrl = "https://www.freepik.com/free-photos-vectors/auckland"
+                        },
+                        new
+                        {
+                            Id = new Guid("24999999-d924-48ba-9d12-780797723865"),
+                            Code = "NTL",
+                            Name = "Northland"
+                        });
                 });
 
             modelBuilder.Entity("NZWalk.API.Models.Domain.Walk", b =>

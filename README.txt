@@ -29,6 +29,8 @@ The "Add-Migration" command is an Entity Framework (EF) Core tool used to scaffo
 PM> Add-Migration "Migration name" - To create Migration folder
 PM> update-database   -- To create Database based on Migration
 
+(If encounter to run the above powershell, you can use  -ErrorAction Continue)
+
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools --This is the package that has responsible to run migration.
 				    --Migration will create Database Table based on Models.Domain
@@ -109,8 +111,10 @@ using AutoMapper;
 CreateMap<Source,Desitation>.ReverseMap();
 
 Register in program.cs
-builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
+// 2026-03-15 - Today the latest AutoMapper version is 16.1.1. But this version has registration issue.
+So, we have to use the downgrade version, AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1
 
 
 6. Add Swagger
