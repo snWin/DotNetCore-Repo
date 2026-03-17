@@ -9,5 +9,6 @@ namespace NZWalk.API.Repositories
 	{
 		// Walk is Domain Model. Repository always deals with Domain Model.
 		Task<Walk> CreateAsync(Walk walk);
+		Task<List<Walk>> GetAllAsync();
 	}
 }

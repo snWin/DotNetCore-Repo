@@ -10,13 +10,14 @@ namespace NZWalk.API.Data
 		// We will then pass this dbContextOptions to the base class constructor of DbContext, so that it can be used by the DbContext.
 		//we are basically passing the Options to the base class over here and to this DBContext class as well.
 		//Options --> base --> DbContext
-		public NZWalksDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+
+		//DbContextOptions is non-generaic type. DbContextOptions<NZWalksDbContext> ... means .. in the constructor, pass the DbContextOption type, <NZWalksDbContext> 
+		//DbContextOptions<NZWalksDbContext> is DbContextOptions type of NZWalksDbContext
+		public NZWalksDbContext(DbContextOptions<NZWalksDbContext> dbContextOptions) : base(dbContextOptions)
 		{
 			//We will see the usage of this constructor in the Program.cs file when we create a new connection
 			//and then injecte the connection through the Program.cs file.
-			//This is how we will be configuring our database connection.
-			
-
+			//This is how we will be configuring our database connection.			
 		}
 
 		//DbSet is a property of the DbContext class. These DbSet property will create table inside database.

@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿/*
 using NZWalk.API.Models.Domain;
 using NZWalk.API.Models.DTO;
 
@@ -21,6 +21,7 @@ namespace NZWalk.API.Mappings
 		}
 	}
 }
+*/
 
 // If the Names of the properties are match each other.
 //public class AutoMapperProfiles : Profile

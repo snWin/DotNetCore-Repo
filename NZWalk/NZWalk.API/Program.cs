@@ -1,10 +1,16 @@
 using System.Reflection;
 using System.Reflection.Metadata;
-using AutoMapper;
+
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
 using NZWalk.API.Data;
 
 using NZWalk.API.Repositories;
+using Microsoft.Data.SqlClient;
+using System.Text;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,8 +42,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<NZWalksDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnectionString")));
 
+builder.Services.AddDbContext<NZWalksAuthDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksAuthConnectionString")));
+
 builder.Services.AddScoped<IRegionRepository,SQLRegionRepository>();
 builder.Services.AddScoped<IWalkRepository, SQLWalkRepository>();
+builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 
 //AutoMapper is injected into the application by registering it in here, program.cs file.
 //In Program.cs, register AutoMapper to scan your assembly for mapping profiles:
@@ -45,10 +55,45 @@ builder.Services.AddScoped<IWalkRepository, SQLWalkRepository>();
 //builder.Services.AddAutoMapper(typeof(Program));
 
 // after installed Downgrade versino, 12.0.1, it is solved.
-builder.Services.AddAutoMapper(typeof(Program).Assembly);
+/*builder.Services.AddAutoMapper(typeof(Program).Assembly);*/
 
 //Registering AutoMapper to scan your assembly means configuring the library to automatically find all classes that inherit from Profile within your project, eliminating the need to manually register each mapping configuration. 
 //If the application runs, it will scan all the mapping 
+
+// inject Identity package before Authentication injection
+builder.Services.AddIdentityCore<IdentityUser>()
+	.AddRoles<IdentityRole>()
+	.AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>("NZWalks")
+	.AddEntityFrameworkStores<NZWalksAuthDbContext>()
+	.AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+	options.Password.RequireDigit= false;
+	options.Password.RequireLowercase = false;
+	options.Password.RequireNonAlphanumeric = false;
+	options.Password.RequireUppercase = false;
+	options.Password.RequiredLength = 6;
+	options.Password.RequiredUniqueChars = 1;
+});
+
+
+
+//Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+	.AddJwtBearer(options =>
+	options.TokenValidationParameters =new TokenValidationParameters
+	{
+		ValidateIssuer = true,
+		ValidateAudience=true,
+		ValidateLifetime=true,
+		ValidateIssuerSigningKey= true,
+		ValidIssuer = builder.Configuration["Jwt:Issuer"],
+		ValidAudience = builder.Configuration["Jwt:Audience"],
+		IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]))
+	});
+// make sure you use "Jwt" object in json file
+
 
 var app = builder.Build();
 
@@ -64,6 +109,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Add Authentication into Middleware Pipeline
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

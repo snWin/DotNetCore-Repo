@@ -1,6 +1,6 @@
 ﻿using System.Security.AccessControl;
-using AutoMapper;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +14,8 @@ namespace NZWalk.API.Controllers
 	// https://localhost:portnumber/api/Regions  -- is point to this controller, RegionController
 	[Route("api/[controller]")] //Route attribute is basically define the Route and whenever user enters, this Route points to controller.
 	[ApiController] //This will tell this application that this Controller is API use and automatically validate the model state.
+	[Authorize] // This authentize the below whole class. Any Public or anynymous users can not access. 401 will return
+	//If the client wants to use the resource, eg, Region, they would have to generate a Token. That is JWT Token
 	public class RegionsController : ControllerBase
 	{
 		// First, We use dbContext to inject DataBase
@@ -21,19 +23,20 @@ namespace NZWalk.API.Controllers
 
 		// Second, we use Repository to inject DataBase, which is best practice, because it will separate the data access logic from the controller and it will make the code more maintainable and testable.
 		private readonly IRegionRepository regionRepository;
-		private readonly IMapper mapper;
+		/*private readonly IMapper mapper; */
 
 		// As we injected DbContext by using DI, now we can use DbContext inside the Controller through Constructor Injection.
 		// type ctor, press double Tab to create constructor faster.
 		// select dbContext. press Ctrl + . to create and assign field dbContext
-		public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository,IMapper mapper)
+		public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository)	//,IMapper mapper)
 		{
 			// First we use dbContext to inject DataBase, which is not good practice, because it will couple the controller with the data access logic and it will make the code less maintainable and testable.
 			//this.dbContext = dbContext; // is not used. we use Repository instead.
 
 			//Second, we use Repository to inject DataBase, which is best practice, because it will separate the data access logic from the controller and it will make the code more maintainable and testable.
 			this.regionRepository = regionRepository;
-			this.mapper = mapper;
+			
+			/*this.mapper = mapper;*/
 		}
 
 		// Get All Regions
@@ -63,7 +66,7 @@ namespace NZWalk.API.Controllers
 			//Map Domain Models to DTOs
 			//To use the AutoMapper, register an AutoMapper profile in program.cs file - telling the application to use this Profile when the application starts.
 			// will use Mapper instead of the Map Domain Models to DTOs
-			/*
+			
 			  var regionsDto = new List<RegionDto>();
 			foreach (var regionsDomain in regionsDomains)
 			{
@@ -77,7 +80,7 @@ namespace NZWalk.API.Controllers
 			}
 
 			return Ok(regionsDto);
-			*/
+			
 
 			//Map Domain Models to DTOs
 			//mapper.Map<Destination>(Source) - to map/convert from source to destination.
@@ -86,7 +89,7 @@ namespace NZWalk.API.Controllers
 
 			// OR - the above two lines of code can be written in one line as below.
 
-			return Ok(mapper.Map<List<RegionDto>>(regionsDomains)); //Map Domain Models to DTO and return DTOs to client by one line.
+			/* return Ok(mapper.Map<List<RegionDto>>(regionsDomains)); *///Map Domain Models to DTO and return DTOs to client by one line.
 		}
 
 		// GET action to retrieve the created item
@@ -129,7 +132,7 @@ namespace NZWalk.API.Controllers
 			}
 
 			// Map/Convert Region Domain Model to Region DTO
-			/* Use AutoMapper instead of the below code.
+			/* Use AutoMapper instead of the below code.*/
 			var regionDto = new RegionDto
 			{
 				Id = regionDomain.Id,
@@ -140,10 +143,10 @@ namespace NZWalk.API.Controllers
 
 			// Return DTO back to client
 			return Ok(regionDto);
-			*/
+			
 
 			//AutoMapper
-			return Ok(mapper.Map<RegionDto>(regionDomain)); // Map/Convert Region Domain Model to Region DTO and Return DTO back to client by one line.
+			/*return Ok(mapper.Map<RegionDto>(regionDomain)); */// Map/Convert Region Domain Model to Region DTO and Return DTO back to client by one line.
 		}
 
 		//	POST to Create New Region

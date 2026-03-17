@@ -6,11 +6,11 @@ D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\NZWalk.API.deps.json
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\NZWalk.API.runtimeconfig.json
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\NZWalk.API.dll
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\NZWalk.API.pdb
-D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\AutoMapper.dll
-D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\Azure.Core.dll
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\Azure.Identity.dll
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\Humanizer.dll
+D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\DotNetCore-Repo\NZWalk\NZWalk.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll

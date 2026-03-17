@@ -6,9 +6,9 @@ I Followed this video playlist and made practice.
 Tested with Browser.
 Tested with Postman.
 
-1. Domain Driven Development
+#1. Domain Driven Development
 
-2. DbContext Class
+#2. DbContext Class
 -Maintaining Connection To Db
 -Track Changes -- (Entity Framework Core (EF Core) entities are tracked by the DbContext instance by default. This mechanism, known as "Change Tracking". So no need to change "Update" method. We have to use "dbContext.SaveChanges()".)
 -Perform CRUD operations
@@ -21,7 +21,7 @@ DbContext Class is a bridge between Domain Model Classes (Controller) and DataBa
 DbContext Class is a primary class that is responsible for interacting with the DataBase 
 and performing CRUD operation on our DataBase Tables.
 
-3. Add Entity Framework Core
+#3. Add Entity Framework Core
 Tools--> NuGet Package Manager --> Package console
 
 The "Add-Migration" command is an Entity Framework (EF) Core tool used to scaffold a new database migration based on changes made to your data model (DbContext and entity classes since the last migration.
@@ -36,7 +36,7 @@ Microsoft.EntityFrameworkCore.Tools --This is the package that has responsible t
 				    --Migration will create Database Table based on Models.Domain
 
 
-4. DTO (Data Transfer Object) Vs Domain Models
+#4. DTO (Data Transfer Object) Vs Domain Models
 Client -- DTO -- API -- Domain Model Database
 
 DTO has subset of the properties of a domain object.
@@ -63,10 +63,10 @@ contract = legally binding agreement between two or more parties
 
 
 
-5 
+#5. 
 Asynchronous Programmings 
 Repository Pattern
-Automapper
+Automapper (Third-party libraries)
 
 ** Asynchronous Programmings **
 - the recommended approach for I/O-bound database operations
@@ -117,7 +117,7 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 So, we have to use the downgrade version, AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1
 
 
-6. Add Swagger
+#6. Add Swagger
 
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-8.0&tabs=visual-studio
 
@@ -130,4 +130,20 @@ https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swa
 (3) Browse https://localhost:portnumber/swagger/index.html
 
 
+
+#7. Authentication and Authorization - JWT (JSON Web Token) Tokens
+Authentication - The process to determine a user's Identity
+Authorization - User has permission to perform actions
+
+user -- > Website -- login, success-- >  API
+		 <-- return JWT Token --
+
+		 -- Use JWT Token To Make Call --> API
+		<-- Get data back --
+
+install
+Microsoft.AspNetCore.Authentication.JwtBearer
+Microsoft.IdentityModel.Tokens
+System.IdentityModel.Tokens.Jwt
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
